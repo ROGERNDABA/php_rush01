@@ -1,0 +1,54 @@
+body {background-color:#205560;}
+.login_class
+{
+    /* background-color: yellow; */
+    position: relative;
+    /* vertical-align: middle; */
+    top: 250px;
+    align-self: center;
+    width: 100%;
+    height: 400px;
+}
+
+.login_container
+{
+    /* background-color: brown; */
+    position: relative;
+    left: 36vw;
+    height: 100%;
+    width: 500px;
+}
+
+input
+{
+    background-color: pink;
+    position: relative;
+    top: 90px;
+    display: block;
+    font-family: Consolas;
+    text-align: center;
+    left: 20px;
+    font-size: 32px;
+    width: 450px;
+    height: 70px;
+    border: 5px solid #205560;
+    border-radius: 10px;
+}
+
+input[type=submit]
+{
+    color: #205560;
+}
+
+.create_account
+{
+    position: relative;
+    top: 100px;
+    font-family: Consolas;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    align-items: flex-start;
+    left: 32%;
+    color: white;
+}
