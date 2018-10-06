@@ -19,6 +19,16 @@ body {background-color:#205560;}
     width: 500px;
 }
 
+.error_msg
+{
+    position: relative;
+    top: 75px;
+    font-family: Consolas;
+    font-size: 18px;
+    color: red;
+    left: 24px;
+}
+
 input
 {
     background-color: pink;

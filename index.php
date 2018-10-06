@@ -1,11 +1,12 @@
 <?php
-    if (isset($_GET['get']))
-    {
-        echo 'you such';
-    }
-    if(!$_POST["login"] || !$_POST["passwd"])
-    {
-        $msg = "You left one or more of the required fields.";
-        header("Location: index.php?msg=$msg");
-    }
+    OpenCon();
+   if(!$_POST["login"] || !$_POST["passwd"])
+   {
+       $msg = "Blank field for Username or Password";
+       $msgEncoded = base64_encode($msg);
+       header("location:index.phtml?msg=".$msgEncoded);
+   }
+   {
+       header("Location: login.php");
+   }
 ?>
