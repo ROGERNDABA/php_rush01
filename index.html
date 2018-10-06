@@ -9,13 +9,18 @@
     <body>
         <div class="login_class">
             <div class="login_container">
-                    <form id='index.php' action='create.php' method='post' accept-charset='UTF-8'>
+                    <form id='index' action='index.php' method='post' accept-charset='UTF-8'>
                             <input type='hidden' name='submitted' id='submitted' value='1'/>
                             <input type='text' name='login' id='login'  maxlength="500" placeholder="Username or Email"/>
                             <input type='password' name='passwd' id='passwd' maxlength="50" placeholder="Password"/>
-                            <input type='submit' name='submit' value='Sing in' />
+                            <input type='submit' name='submit' value='Sign in' />
+                            <span>
+                                    <?php if(isset($_GET['msg']))
+                                        echo $_GET['msg'];
+                                    ?>
+                            </span>
                     </form>
-                    <a class="create_account" href="new_account.html">
+                    <a class="create_account" href="create.php">
                         Create Account
                     </a>
             </div>
