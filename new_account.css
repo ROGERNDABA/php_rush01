@@ -50,3 +50,14 @@ input[type=submit]
     position: relative;
     left: 36vw;
 }
+
+.error_msg
+{
+    position: relative;
+    display: inline;
+    top: 0px;
+    font-family: Consolas;
+    font-size: 18px;
+    color: red;
+    left: 64px;
+}

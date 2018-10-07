@@ -8,11 +8,24 @@
 </head>
 <body>
     <div class="edit">
-        <div class="bar">
+        <script>
+            $(".bar").click(function () {
+            var effect = 'slide';
+            var options = { direction: right};
+            var duration = 500;
+            $('edit').toggle(effect, options, duration);
+            });
+        </script>
+        <div class="bar"></div>
+            <div class="name">
+                <?php
+                    echo $_POST['login']. '<br>'. $_POST['passwd'];
+                ?>
+            </div>
+            <hr>
         </div>
-    </div>
-    <div class="items">
+        <div class="items">
 
-    </div>
+        </div>
 </body>
 </html>

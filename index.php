@@ -16,11 +16,13 @@
        while($row = $re->fetch_assoc()) {
             if (!strcmp($_POST['login'], "adminunlock") && !strcmp($_POST['passwd'], "dontunlock"))
             {
+                session_start();
                 header("location: admin_login.php");
                 exit();
             }
             else if (!strcmp($row['username'], $_POST['login']) && !strcmp($row['passwd'], $_POST['passwd']))
             {
+                session_start();
                 header("Location: login.php");
                 exit();
             }

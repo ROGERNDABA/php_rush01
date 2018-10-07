@@ -1,29 +1,69 @@
-body {background-color: #205560}
+body {
+    padding: 0;
+    background-color: #205560
+}
 
 .edit
 {
     /* background-color: yellow; */
-    width: 300px;
+    border: 5px solid #395d68;
+    padding: 2px;
+    width: 400px;
     height: 100%;
 }
+.identity
+{
+	font-family: Consolas;
+	display: none;
+	color: yellow;
+	text-decoration: none;
+	z-index: 1;
+}
+
+
 .items
 {
     /* background-color: brown; */
     position: absolute;
     float: left;
     top: 0px;
-    left: 300px;
+    left: 400px;
     right: 0;
     height: 100%;
     padding-left: 30px;
 }
+hr {height: 4px; background-color: black; border: black}
 
 .bar
 {
-    background-image: url("https://cdn2.iconfinder.com/data/icons/simple-circular-icons-line/84/Hamburger_Menu-512.png");
+    background-image: url("https://melbournechapter.net/images/profile-vector-default-4.png");
     background-repeat: no-repeat;
     background-size: 100%;
+    position: absolute;
+    /* display: inline-block; */
     /* background-color: blue; */
     width: 100px;
     height: 100px;
+}
+
+p.name
+{
+    font-size: 40px;
+    left: 110px;
+    z-index: 1;
+}
+
+.name
+{
+    /* background-color: aqua; */
+    font-size: 44px;
+    font-family: Consolas;
+    text-align: center;
+    position: relative;
+    /* float: left; */
+    top: 0%;
+    left: 105px;
+    width: 73%;
+    height: 100px;
+    z-index: -1;
 }
