@@ -6,5 +6,5 @@ CREATE TABLE IF NOT EXISTS `rush00` (
   `email` varchar(30) NOT NULL,
   `phone_number` varchar(32) NOT NULL,
   `ID` INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  sex ENUM('1', '0') NOT NULL
+  isadmin ENUM('1', '0') NOT NULL
 ) ENGINE=InnoDB CHARSET=utf8;

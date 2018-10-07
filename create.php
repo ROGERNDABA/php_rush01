@@ -11,7 +11,7 @@
     $passwd = $_POST['passwd'];
 
     $s = "SELECT username, passwd FROM passwords";
-    $q = "INSERT INTO `rush00`(`name`, `surname`, `username`, `phone_number`, `email`, `isadmin`) VALUES (\"$name\",\"$surname\",\"$username\",\"$phone_number\",\"$email\",0)";
+    $q = "INSERT INTO rush00 . rush00 (username, name, surname, email, phone_number, isadmin) VALUES (\"$name\",\"$surname\",\"$username\",\"$phone_number\",\"$email\", 0)";
     $q2 = "INSERT INTO `passwords`(`username`,  `passwd`) VALUES (\"$username\", \"$passwd\")";
     if ($conn) echo "asdasdasdasd"; else echo "shit";
     if (!$_POST['name'] || !$_POST['surname'] || !$_POST['login'] || !$_POST['email'] ||
@@ -75,7 +75,7 @@
            exit();
         }
     }
-    header("Location: login.php");
     $re = $conn->query($q);
     $re = $conn->query($q2);
+    header("Location: login.php");
 ?>

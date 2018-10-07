@@ -25,7 +25,26 @@
             <hr>
         </div>
         <div class="items">
-
+        <div class="items">
+            <?php
+            $i  = 0;
+            $uploads_dir = "./uploads";
+            $array = array(1 => "batman/*.*", 2 => "counterstike/*.*", 3 => "food/*.*", 4 => "tech/*.*", 5 => "emoji/*.*", 6 => "monsters/*.*");
+            $rnd = array_rand($array, 3);
+            $all = $uploads_dir."/".$array[$rnd];
+            print_r($all);
+            foreach ($all as $key)
+            {
+                echo    "<div class='gallery'>";
+                echo        '<a target="_blank" href="#">';
+                echo            '<img src="'.$key.'" alt="Cinque Terre" width="300px" height="200px">';
+                echo        '</a>';
+                echo        '<div class="desc">Add a description of the image here</div>';
+                echo        '<div class="add_cart"></div>';
+                echo    '</div>';
+            }
+            ?>
+        </div>
         </div>
 </body>
 </html>
