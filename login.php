@@ -1,16 +1,11 @@
 <?php
-    //header("Location: login.html");
-    //session_start();
-   //// print_r($_SESSION);
-    ////print_r($_GET);
-    //if (!$_GET["name"] && !$_GET["passwd"])
-    //{
-    //    if(!$_POST["username"] || !$_POST["password"])
-    //    {
-    //        $msg = "You left one or more of the required fields.";
-    //        header("Location:http://localhost/login.php?msg=$msg");
-    //    }
-    //}
+    header("Location: login.phtml");
+    // include("check_index.php");
+    // $conn = OpenCon();
+    // $q = "SELECT username, passwd FROM passwords";
+    // $re = $conn->query($q);
+    // $row = $re->fetch_assoc();
+    // print_r($row);
 ?>
 
     

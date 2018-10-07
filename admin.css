@@ -1,0 +1,102 @@
+.edit
+{
+    background-color: #528493;
+    width: 100%;
+    height: 300px;
+}
+.items
+{
+    /* background-color: brown; */
+    position: absolute;
+    top: 300px;
+    bottom: 0;
+    width: 100%;
+    padding-left: 30px;
+}
+
+.upload
+{
+    display: block;
+    font-size: 25px;
+    height: 40px;
+}
+
+.describe
+{
+    position: absolute;
+    left: 400px;
+    font-size: 25px;
+    top: 8px;
+}
+#describe
+{
+    position: absolute;
+    left: 400px;
+    top: 40px;
+}
+
+.price
+{
+    position: absolute;
+    left: 800px;
+    top: 8px;
+    font-size: 25px;
+}
+
+#price
+{
+    position: absolute;
+    left: 800px;
+    top: 40px;
+}
+.submit
+{
+    position: absolute;
+    left: 1200px;
+    font-size: 35px;
+}
+
+.cart
+{
+    position: absolute;
+    display: inline-flex ;
+    float: left;
+    /* padding-left: 20px; */
+    /* text-align: center; */
+        /* width: 20%; */
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 250px;
+    height: 350px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    position: relative;
+    top: 50px;
+    width: 100%;
+    /* height: 300px; */
+}
+
+div.desc {
+    position: relative;
+    top: 40px;
+    padding: 15px;
+    text-align: center;
+}
+div.add_cart
+{
+    background-color: yellow;
+    position: relative;
+    top: 40px;
+    left: -4px;
+    height: 43px;
+    width: 104%;
+}

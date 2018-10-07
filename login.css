@@ -1,1 +1,29 @@
 body {background-color: #205560}
+
+.edit
+{
+    /* background-color: yellow; */
+    width: 300px;
+    height: 100%;
+}
+.items
+{
+    /* background-color: brown; */
+    position: absolute;
+    float: left;
+    top: 0px;
+    left: 300px;
+    right: 0;
+    height: 100%;
+    padding-left: 30px;
+}
+
+.bar
+{
+    background-image: url("https://cdn2.iconfinder.com/data/icons/simple-circular-icons-line/84/Hamburger_Menu-512.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* background-color: blue; */
+    width: 100px;
+    height: 100px;
+}

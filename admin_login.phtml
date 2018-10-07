@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="admin.css">
+    <title>Document</title>
+</head>
+<body style="background-color: #205560">
+    <div style="width:100%">
+        <div class="edit"><form action="upload.php" method="post" enctype="multipart/form-data">
+            <label for="file_upload" class="upload">Select image to upload:</label>
+            <input type="file" name="file_upload" id="file_upload" accept="image/*">
+            <label for="decsribe" class="describe">Description</label><br>
+            <textarea name="describe" id="describe" cols="30" rows="10">describe</textarea>
+            <label for="decsribe" class="price">price</label><br>
+            <input type="text" name="price" id="price" >
+            <input type="submit" value="Upload" name="upload" class="submit">
+        </form>
+        </div>
+        <div class="items">
+            <?php
+            $i  = 0;
+            $uploads_dir = "./uploads";
+            $all = glob($uploads_dir."/*.*");
+            foreach ($all as $key)
+            {
+                echo    "<div class='gallery'>";
+                echo        '<a target="_blank" href="#">';
+                echo            '<img src="'.$key.'" alt="Cinque Terre" width="300px" height="200px">';
+                echo        '</a>';
+                echo        '<div class="desc">Add a description of the image here</div>';
+                echo        '<div class="add_cart"></div>';
+                echo    '</div>';
+            }
+            ?>
+        </div>
+    </div>
+</body>
+</html>

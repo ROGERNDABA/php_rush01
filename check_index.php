@@ -13,6 +13,6 @@
     {
         $conn -> close();
     }
-    $conn = OpenCon();
-    if ($conn) echo "Connected Successfully";
+    //$conn = OpenCon();
+        //if ($conn) echo "Connected Successfully";
 ?>
